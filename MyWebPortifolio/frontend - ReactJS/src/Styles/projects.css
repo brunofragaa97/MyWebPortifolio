@@ -1,0 +1,18 @@
+.projects {
+  background-color: #181818;
+  padding: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  margin: 10px 0;
+}

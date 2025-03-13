@@ -1,0 +1,28 @@
+.header {
+  background-color: #000;
+  padding: 10px 20px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #4caf50;
+}

@@ -1,0 +1,24 @@
+.sidebar {
+  background-color: #181818;
+  padding: 20px;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #4caf50;
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
