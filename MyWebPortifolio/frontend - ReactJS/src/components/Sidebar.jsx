@@ -4,13 +4,13 @@ import "../styles/sidebar.css";
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile" className="profile-pic" />
+      <img src="https://randomuser.me/api/portraits/men/27.jpg" alt="Profile" className="profile-pic" />
       <h2>Bruno Fraga</h2>
-      <p>Desenvolvedor Full Stack</p>
+      <p>Desenvolvedor Backend Java</p>
       <div className="contact-info">
-        <p>Email: brunofraga@email.com</p>
-        <p>Localização: Sua Cidade, Brasil</p>
-        <p>Telefone: (99) 99999-9999</p>
+        <p>Email: brunofragaa97@gmail.com</p>
+        <p>Florianopolis, Santa catarina, Brasil</p>
+        <p>Telefone: (51) 98904-3802</p>
       </div>
     </aside>
   );
