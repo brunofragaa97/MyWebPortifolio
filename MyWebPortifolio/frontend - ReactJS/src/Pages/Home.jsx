@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../Components/Header";
-import Sidebar from "../Components/Sidebar";
-import About from "../Components/About";
-import Experience from "../Components/Experience";
-import Skills from "../Components/Skills";
-import Projects from "../Components/Projects";
-import Contact from "../Components/Contact";
-import Footer from "../Components/Footer";
-import "../Styles/global.css";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import About from "../components/About";
+import Experience from "../components/Experience";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import "../styles/global.css";
 
 const Home = () => {
   return (
