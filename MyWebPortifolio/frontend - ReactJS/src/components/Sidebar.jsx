@@ -4,7 +4,7 @@ import "../styles/sidebar.css";
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <img src="https://randomuser.me/api/portraits/men/27.jpg" alt="Profile" className="profile-pic" />
+      <img src="https://rollingstone.com.br/media/_versions/keanu_reeves_como_neo_em_matrix_divulgacao_widelg.jpg" alt="Profile" className="profile-pic" />
       <h2>Bruno Fraga</h2>
       <p>Desenvolvedor Backend Java</p>
       <div className="contact-info">
