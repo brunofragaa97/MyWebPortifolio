@@ -11,11 +11,11 @@
 }
 
 .profile-pic {
-  width: 230px;
-  height: 130px;
-  border-radius: 50%;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
   margin-bottom: 15px;
-  border: 3px solid #4caf50;
+  border: 10px solid #0c0c0c;
 }
 
 .contact-info {
