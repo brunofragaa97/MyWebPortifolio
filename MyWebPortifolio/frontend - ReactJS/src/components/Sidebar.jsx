@@ -12,6 +12,7 @@ const Sidebar = () => {
         <p>Florianopolis, Santa catarina, Brasil</p>
         <p>Telefone: (51) 98904-3802</p>
       </div>
+      <button className="btn1">Baixar Curriculum</button>
     </aside>
   );
 };

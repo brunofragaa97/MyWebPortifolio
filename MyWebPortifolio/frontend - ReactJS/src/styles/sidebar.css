@@ -5,9 +5,12 @@
   border-radius: 10px;
   color: #fff;
   text-align: center;
-  height: 400px;
+  height: 500px;
   width: 300px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.sidebar:hover{
+  border: 2px solid #f50505;
 }
 
 .profile-pic {
@@ -22,4 +25,33 @@
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.6;
+}
+.btn1{
+  background: linear-gradient(135deg,rgb(15, 172, 15) , rgb(51, 51, 51), black);
+  background-size: 200% 200%;
+  animation: waveDiagonal 10s ease-in-out infinite;
+  margin-top: 15%;
+  color:white;
+  width: 150px;
+  height: 40px;
+  border: black solid 1px;
+  border-radius: 15px;
+}
+.btn1:hover{
+  background: red;
+  cursor: pointer;
+}
+@keyframes waveDiagonal {
+  
+  0% {
+      background-position: 0% 0%; /* começa no superior esquerdo */
+  }
+  50% {
+      background-position: 100% 100%; /* chega ao inferior direito */
+  }
+  100% {
+      background-position: 0% 0%; /* volta ao superior esquerdo */
+ 
+    }
+    
 }

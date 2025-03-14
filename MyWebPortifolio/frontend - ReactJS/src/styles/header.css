@@ -8,7 +8,9 @@
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-
+.header:hover{
+  border: 2px solid #f50505;
+}
 .nav {
   display: flex;
   justify-content: center;

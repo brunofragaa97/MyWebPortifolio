@@ -5,10 +5,25 @@
 }
 
 body {
-  background-color: #000;
+  background: linear-gradient(135deg, black, rgb(51, 51, 51), rgb(15, 172, 15));
+  background-size: 200% 200%;
+  animation: waveDiagonal 10s ease-in-out infinite; /* 8s para um ciclo suave */
   font-family: Arial, sans-serif;
   color: #fff;
 }
+
+@keyframes waveDiagonal {
+  0% {
+      background-position: 0% 0%; /* começa no superior esquerdo */
+  }
+  50% {
+      background-position: 100% 100%; /* chega ao inferior direito */
+  }
+  100% {
+      background-position: 0% 0%; /* volta ao superior esquerdo */
+  }
+}
+
 
 .container {
   max-width: 1200px;
