@@ -1,11 +1,13 @@
 import "../styles/modal.css";
 
-const Modal = ({ isOpen, closeModal, children }) => {
-    
+const Modal = ({  isOpen, onClose, children }) => {
+    if(!isOpen) return null;
 
     return (
-        <div
+       <div
          className="modal-overlay"
+         onClick={onClose}
+         
          >
         <div className="container-modal" onClick={(e) => e.stopPropagation()}>
             <div>
