@@ -37,17 +37,21 @@ const Home = () => {
             <ModalApresentacao />
           </div>
         </Modal>
-        {/* Modal 2 movido para cá */}
+        {/* Modal 2*/}
         <Modal isOpen={activeModalContent === 2} onClose={closeModal}>
           <About />
+        </Modal>
+         {/* Modal 3*/}
+        <Modal isOpen={activeModalContent === 3} onClose={closeModal}>
+          <Experience />
         </Modal>
         <Sidebar />
         <main className="main-content">
           <section className="section-about" id="about" onClick={() => openModal(2)}>
             Quem é Bruno de Fraga?
           </section>
-          <section id="experience">
-            <Experience />
+          <section className="section-experience" id="experience" onClick={() => openModal(3)}>
+            Experiencias
           </section>
           <section id="skills">
             <Skills />
