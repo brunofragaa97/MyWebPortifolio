@@ -9,9 +9,7 @@ const Modal = ({  isOpen, onClose, children }) => {
          onClick={onClose}
          >
         <div className="container-modal" onClick={(e) => e.stopPropagation()}>
-            <div>
             {children}
-            </div>
         </div>
         
 

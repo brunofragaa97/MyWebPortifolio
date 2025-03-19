@@ -33,9 +33,7 @@ const Home = () => {
       <div className="content">
         {/* Modal 1 */}
         <Modal isOpen={activeModalContent === 1} onClose={closeModal}>
-          <div>
             <ModalApresentacao />
-          </div>
         </Modal>
         {/* Modal 2*/}
         <Modal isOpen={activeModalContent === 2} onClose={closeModal}>
