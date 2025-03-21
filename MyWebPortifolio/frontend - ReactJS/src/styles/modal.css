@@ -5,17 +5,15 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro semi-transparente */
+    padding: 100px;
     display: flex; /* Centraliza o conteúdo */
-    align-items: center;
     justify-content: center;
     z-index: 1; /* Coloca o modal acima de outros elementos */
     
   }
 
 .container-modal{
-    background-color: rgb(10, 10, 10);
     width: 600px;
-    height: 500px;
-    border: 10px solid black;
-    border-radius: 10px
+    height: 300px;
+   
 }

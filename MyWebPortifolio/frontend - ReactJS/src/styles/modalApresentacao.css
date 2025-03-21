@@ -1,75 +1,128 @@
-.modal-apresentacao{
-    background-color: rgb(13, 14, 14);
+@font-face {
+    font-family: 'fsex300';
+    /* Nome que você vai usar no CSS */
+    src: url('../../public/fonts/FSEX300.ttf') format('truetype');
+    /* Caminho relativo ao CSS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'perfectdos';
+    /* Nome que você vai usar no CSS */
+    src: url('../../public/fonts/perfectdos.ttf') format('truetype');
+    /* Caminho relativo ao CSS */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.modal-wrapper {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.titulo-apresentacao {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        background: linear-gradient(135deg, #ffffff, #00ff00, #1a3c1a, #333);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: waveDiagonal 5s ease-in-out infinite;
+        text-shadow:
+            0 0 8px rgba(0, 255, 0, 0.9),
+            0 0 15px rgba(0, 255, 0, 0.7),
+            0 0 25px rgba(0, 255, 0, 0.5),
+            0 0 40px rgba(255, 255, 255, 0.3),
+            0 0 60px rgba(255, 255, 255, 0.1);
+        letter-spacing: 2px;
+        filter: brightness(1.2);
+    }
+@keyframes waveDiagonal {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+
+.modal-apresentacao {
     width: 100%;
     height: 100%;
     padding: 10px 20px;
     border-radius: 10px;
 }
-.titulo-apresentacao {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.4;
-    font-weight: 700;
-    background: linear-gradient(135deg, #fcfbfb, #333, #0fac0f);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: waveDiagonal 5s ease-in-out infinite;
+
+.par-container {
+
+    padding: 0px 70px;
 }
 
-@keyframes waveDiagonal {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
 
-.par-boas-vindas{
-    font-family: 'Roboto', 'Arial', sans-serif;
+
+
+.par-boas-vindas {
+    background-color: rgb(44, 43, 43);
+    font-size: 18px;
     text-align: justify;
-    padding: 0px 100px;
-    
-
+    border: solid rgb(3, 3, 3) 10px ;
+    border-radius: 20px;
+    padding: 20px;
 }
+
 .span-emoji-final {
-    font-size: 60px;
+    position: fixed;
+    font-size: 30px;
     text-align: center;
     cursor: pointer;
-    animation: pulsar 1.5s ease-in-out infinite; /* Pulsação contínua */
+    color: #0fac0f;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    animation: pulsar 1.5s ease-in-out infinite;
+    z-index: 1000;
 }
 
-/* Animação de pulsação */
 @keyframes pulsar {
     0% {
-        transform: scale(1);
+        transform: translate(-50%, -50%) scale(1.5);
+        /* Ajustado para usar translate */
     }
+
     50% {
-        transform: scale(1.2); /* Aumenta o tamanho */
+        transform: translate(-50%, -50%) scale(3);
     }
+
     100% {
-        transform: scale(1); /* Retorna ao tamanho original */
+        transform: translate(-50%, -50%) scale(1.5);
     }
 }
 
 @keyframes decolar {
     0% {
-        transform: translate(0, 0) scale(1); /* Começa no lugar e no tamanho normal */
+        transform: translate(-50%, -50%) scale(2);
+        /* Mantém a centralização */
     }
-    70% {
-        transform: translate(200px, -200px) scale(1.2); /* Move-se para a diagonal (direção superior direita) */
+
+    30% {
+        transform: translate(300px, -300px) scale(6);
     }
+
     100% {
-        opacity: 0; /* Fica invisível */
-        transform: translate(300px, -300px) scale(1.2); /* Continua subindo para o canto superior direito */
+        transform: translate(1200px, -1200px) scale(10);
+        opacity: 0;
+        /* Adicionado para o foguete desaparecer */
     }
 }
 
 .decolando {
-    animation: decolar 2s ease-in-out forwards;
+    animation: decolar 1s ease-in-out forwards;
 }
