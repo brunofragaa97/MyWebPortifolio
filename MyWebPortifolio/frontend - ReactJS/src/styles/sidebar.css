@@ -55,3 +55,14 @@
     }
     
 }
+.img-qr-code img{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+}
+.redes-icons img{
+  width: 30px;
+  height: 30px;
+  margin: 30px 10px;
+  cursor: pointer;
+}
