@@ -28,6 +28,7 @@
         background: linear-gradient(135deg, #ffffff, #00ff00, #1a3c1a, #333);
         background-size: 300% 300%;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         animation: waveDiagonal 5s ease-in-out infinite;
         text-shadow:
