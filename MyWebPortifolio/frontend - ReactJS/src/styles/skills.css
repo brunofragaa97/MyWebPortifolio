@@ -7,64 +7,129 @@
   margin-top: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   font-size: 20px;
-  height: 340px;
+  height: 300px;
   overflow: hidden;
 }
-.skills:hover{
+
+.skills:hover {
   border: 2px solid #f50505;
 }
-.skills-container{
+
+.skills-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px; /* Espaço entre os elementos */
+  grid-template-columns: 400px 60px 1fr;
   align-items: start;
+  padding: 20px;
 }
+
+.skills-divider {
+  width: 2px;
+  height: 220px;
+  background-color: #585a58;
+  margin-top: 10px;
+  margin-left: 30px;
+  border-radius: 100px;
+}
+
 .skills-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 400px;
+  /* Limita a largura à primeira coluna do grid */
 }
+
 .skills-text {
+  width: 560px;
+  height: 230px;
   background-color: #222;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-size: 16px;
+  text-align: center;
+  padding:  10px 50px;
   line-height: 1.5;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-.skills-container-frontend{
+
+.skills-container-frontend {
   margin-top: 10px;
   justify-content: space-between;
   align-items: center;
- 
 }
-.skills h3{
+
+.skills h3 {
   font-size: 14px;
   margin: 5px;
 }
 
+/* Definindo o espaço para as imagens rolarem e ajustando a animação */
 
 
-@keyframes marquee {
-  0% {
-    transform: translate(100%);
-  }
- 
-}
 .skills-img {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  /* Mantém as imagens em uma linha */
   gap: 10px;
+  width: 400px;
+  /* Limita ao tamanho da coluna do grid */
+  overflow: hidden;
+  /* Esconde o que ultrapassa */
+  position: relative;
 }
 
-.skills-img img{
+.skills-img-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: marquee 20s linear infinite;
+  /* Animação contínua */
+}
+
+.skills-img img {
   width: 60px;
   margin: 5px;
   border-radius: 10px;
+  flex-shrink: 0;
+  /* Impede que as imagens sejam comprimidas */
 }
-.skills-img img:hover{
+
+.skills-img img:hover {
   transform: scale(1.3);
   transition: 0.5s;
   cursor: pointer;
   border: #f50505 2px solid;
+}
+
+/* Definição da animação de esteira */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+    /* Começa no início */
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Move até a metade do conteúdo duplicado */
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+  /* Fundo escuro */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00ff88, #fafafa);
+  /* Gradiente azul para verde tech */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f7f8fa, #ec0202);
 }
