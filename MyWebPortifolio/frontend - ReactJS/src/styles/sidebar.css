@@ -60,6 +60,13 @@
   height: 150px;
   margin-top: 10px;
 }
+.img-qr-code img:hover{
+  scale: 1.5;
+  transition: 2s;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 10px;
+}
 .redes-icons img{
   width: 30px;
   height: 30px;

@@ -66,17 +66,12 @@
 }
 
 /* Definindo o espaço para as imagens rolarem e ajustando a animação */
-
-
 .skills-img {
   display: flex;
-  flex-wrap: nowrap;
-  /* Mantém as imagens em uma linha */
-  gap: 10px;
+  flex-wrap: nowrap; /* Mantém as imagens em uma linha */
   width: 400px;
-  /* Limita ao tamanho da coluna do grid */
-  overflow: hidden;
-  /* Esconde o que ultrapassa */
+  overflow: hidden;  
+     /* Limita ao tamanho da coluna do grid */
   position: relative;
 }
 
@@ -91,15 +86,16 @@
   width: 60px;
   margin: 5px;
   border-radius: 10px;
-  flex-shrink: 0;
-  /* Impede que as imagens sejam comprimidas */
+  flex-shrink: 0; /* Impede que as imagens sejam comprimidas */
+  
 }
 
 .skills-img img:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: 0.5s;
   cursor: pointer;
   border: #f50505 2px solid;
+  flex-shrink: 0;
 }
 
 /* Definição da animação de esteira */
